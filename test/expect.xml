@@ -1,0 +1,35 @@
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="code" ac:schema-version="1">
+  <ac:plain-text-body><![CDATA[val hello = "hello World"
+println(hello)]]></ac:plain-text-body>
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="code" ac:schema-version="1">
+  <ac:parameter ac:name="language">scala</ac:parameter>
+  <ac:plain-text-body><![CDATA[val hello = "hello World"
+println(hello)]]></ac:plain-text-body>
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="code" ac:schema-version="1">
+  <ac:parameter ac:name="language">scala</ac:parameter>
+  <ac:parameter ac:name="linenumbers">true</ac:parameter>
+  <ac:plain-text-body><![CDATA[val hello = "hello World"
+println(hello)]]></ac:plain-text-body>
+</ac:structured-macro>
+<p>aaa<br/>bbb</p>
+<p>ccc</p>
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="info" ac:schema-version="1">
+  <ac:rich-text-body>
+    <p>info<br/>text</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="warning" ac:schema-version="1">
+  <ac:rich-text-body>
+    <p>error<br/>text</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="tip" ac:schema-version="1">
+  <ac:rich-text-body>
+    <p>success<br/>text</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="note" ac:schema-version="1">
+  <ac:rich-text-body>
+    <p>warning<br/>text</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
