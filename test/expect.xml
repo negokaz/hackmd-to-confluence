@@ -1,11 +1,4 @@
 <ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="code" ac:schema-version="1">
-  <ac:plain-text-body><![CDATA[val hello = "hello World"
-println(hello)]]></ac:plain-text-body>
-<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="code" ac:schema-version="1">
-  <ac:parameter ac:name="language">scala</ac:parameter>
-  <ac:plain-text-body><![CDATA[val hello = "hello World"
-println(hello)]]></ac:plain-text-body>
-<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="code" ac:schema-version="1">
   <ac:parameter ac:name="language">scala</ac:parameter>
   <ac:parameter ac:name="linenumbers">true</ac:parameter>
   <ac:plain-text-body><![CDATA[val hello = "hello World"
@@ -33,3 +26,100 @@ println(hello)]]></ac:plain-text-body>
     <p>warning<br/>text</p>
   </ac:rich-text-body>
 </ac:structured-macro>
+<table class="wrapped">
+  <colgroup>
+    <col/>
+    <col/>
+    <col/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>header1</th>
+      <th>header2</th>
+      <th>header3</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <ac:image ac:height="250">
+    <ri:url ri:value="https://octodex.github.com/images/minion.png"/>
+  </ac:image>
+</p>
+<p>
+  <ac:image>
+    <ri:url ri:value="https://octodex.github.com/images/minion.png"/>
+  </ac:image>
+</p>
+<ac:task-list>
+<ac:task>
+<ac:task-id>1</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body>
+      <span>task1</span>
+    </ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>2</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body>
+      <span>task2</span>
+    </ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>3</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body>
+      <span>task3</span>
+    </ac:task-body>
+</ac:task>
+</ac:task-list>
+<ul>
+  <li>
+    <span>list1</span>
+  </li>
+  <li>
+    <span>list2</span>
+  </li>
+  <li>
+    <span>list3</span>
+  </li>
+</ul>
+<ol>
+  <li>
+    <span>nlist1</span>
+  </li>
+  <li>
+    <span>nlist2</span>
+  </li>
+  <li>
+    <span>nlist3</span>
+  </li>
+</ol>
+<p>
+  <span>
+    <strong>bold</strong> text</span>
+</p>
+<p>
+  <span>
+    <em>italic</em> text</span>
+</p>
+<p>
+  <span>
+    <u>underline</u> text</span>
+</p>
+<p>
+  <span>
+    <a href="https://hackmd.io/features">link</a>
+    <br/>
+  </span>
+</p>
