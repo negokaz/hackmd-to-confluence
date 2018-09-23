@@ -8,11 +8,10 @@ function renderContainer(type) {
       return '' +
 `<ac:structured-macro ac:macro-id="00000000-0000-0000-0000-000000000000" ac:name="${type}" ac:schema-version="1">
   <ac:rich-text-body>
-    ${markdown.utils.escapeHtml(content[1])}`;
+    `;
     } else {
       return '' +
-`
-  </ac:rich-text-body>
+`  </ac:rich-text-body>
 </ac:structured-macro>
 `;
     }
@@ -26,11 +25,11 @@ function renderFence(tokens, idx, _options, env, self) {
 
   const lang = token.info.replace(/=$|=\d+$|=\+$|!$|=!$/, '').trim();
   if (lang) {
-    parameters.push(`<ac:parameter ac:name= "language">${lang}</ac:parameter>`);
+    parameters.push(`<ac:parameter ac:name="language">${lang}</ac:parameter>`);
   }
   const hasLinenumbers = /=$|=\d+$|=\+$/.test(token.info);
   if (hasLinenumbers) {
-    parameters.push('<ac:parameter ac:name = "linenumbers">true</ac:parameter>');
+    parameters.push('<ac:parameter ac:name="linenumbers">true</ac:parameter>');
   }
 
   return '' +
@@ -43,6 +42,7 @@ function renderFence(tokens, idx, _options, env, self) {
 
 var markdown = markdownIt({
     html: true,
+    xhtmlOut: true,
     breaks: true,
     linkify: true,
     typographer: true
