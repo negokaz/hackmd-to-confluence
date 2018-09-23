@@ -3,7 +3,7 @@
 cd $(dirname $0)
 
 function main {
-  diff --side-by-side --width=250 --color <(test) <(expect) && echo === OK === || echo === NG ===
+  diff -u <(expect) <(test) && echo === OK === || echo === NG ===
 }
 
 function test {
