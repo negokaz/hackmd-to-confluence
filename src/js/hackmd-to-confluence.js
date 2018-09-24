@@ -68,9 +68,21 @@ var markdown = markdownIt({
   .use(require('markdown-it-sup'))
   .use(require('markdown-it-task-lists'))
   .use(require('markdown-it-emoji'))
+  .use(require('markdown-it-imsize'), { autofill: false })
   ;
 
 markdown.renderer.rules.fence = renderFence;
+markdown.renderer.rules.image = function (tokens, idx, options, env, slf) {
+  const token = tokens[idx];
+  const url = token.attrGet('src');
+  const width = token.attrGet('width');
+  const height = token.attrGet('height');
+  return `
+<ac:image${width ? ` ac:width="${width}"` : ''}${height ? ` ac:height="${height}"` : ''}>
+  <ri:url ri:value="${url}"/>
+</ac:image>
+`;
+};
 
 exports.convert = (src) => {
   return markdown.render(src);
