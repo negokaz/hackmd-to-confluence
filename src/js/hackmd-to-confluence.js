@@ -83,6 +83,12 @@ markdown.renderer.rules.image = function (tokens, idx, options, env, slf) {
 </ac:image>
 `;
 };
+markdown.renderer.rules.ins_open = function (tokens, idx, options, env, slf) {
+  return '<u>';
+}
+markdown.renderer.rules.ins_close = function (tokens, idx, options, env, slf) {
+  return '</u>';
+}
 
 exports.convert = (src) => {
   return markdown.render(src);
